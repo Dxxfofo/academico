@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pegado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&    display=swap" rel="stylesheet">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <a class="b" href="index.html"><img class="s" src="imagens/logosenacv2.png" alt="">
+        <ul>
+            <li><a href="aluno.html">Alunos</a></li>
+            <li><a href="professor.html">Professores</a></li>
+            <li><a href="disciplina.html">Disciplinas</a></li>
+            <li><a href="turmas.html">Turmas</a></li>
+        </ul>
+    </div>
+    <div class="i">
+        <form name="formalunos" onsubmit="return testaform()" action="" method="post">
+            <h1 class="h1">Justificativa de Falta</h1>
+            <Label for="matricula">Matricula</Label>
+            <input type="number" id="matricula" name="matricula" max="10">
+
+            <Label>Aluno</Label>
+            <input type="text" id="nomealuno" name="nomealuno">
+
+            <Label for="data">Data da Falta</Label>
+            <input type="date">
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

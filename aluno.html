@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <link rel="stylesheet" href="aluno.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&    display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script/script.js">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div class="a">
+        <form name="formsenha" action="" onsubmit="return testasenha()" method="post">
+            <p><a href="index.html">home</a></p>
+            <h1 class="h1">Cadastro de Aluno</h1>
+
+            <Label for="matricula">Matricula</Label>
+            <input type="number" id="matricula" name="matricula">
+
+            <Label>Aluno</Label>
+            <input type="text" id="aluno" name="aluno">
+
+            <Label for="data">Data de nascimento</Label>
+            <input type="date">
+
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="masculino">Feminino</option>
+            </select>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+    
+            <label for="confirmasenha">Confirmar Senha</label>
+            <input type="password" name="confirmasenha" id="confirma">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
